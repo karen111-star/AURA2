@@ -2,129 +2,556 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>AURA El Spa | Bienestar Premium</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AURA Spa - Experiencia premium de bienestar y relajación. Rituales personalizados, masajes terapéuticos y ambiente sensorial exclusivo. ¡Agenda tu experiencia hoy!">
+  <meta name="keywords" content="spa, bienestar, masajes, relajación, terapia">
+  <meta name="author" content="AURA Spa">
+  <meta property="og:title" content="AURA El Spa | Bienestar Premium">
+  <meta property="og:description" content="Experiencia sensorial diseñada para desconectarte del mundo y reconectar contigo mismo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+  <meta name="theme-color" content="#6B7C52">
+  <title>AURA El Spa | Bienestar Premium</title>
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos por módulos -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tipografia/header.css">
+  <link rel="stylesheet" href="movil/hero.css">
+  <link rel="stylesheet" href="animada/sections.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- ═══════════════════════════
+     HEADER
+════════════════════════════ -->
 <header>
   <div class="brand">
-    <div class="logo-mark">A</div>
+    <div class="logo-circle">
+      <img src="logo.png" alt="AURA Spa Logo" class="logo-img">
+    </div>
     <div class="brand-copy">
       <h1>AURA</h1>
-      <p> SPA fortalece tu Aura </p>
+      <p>SPA · fortalece tu Aura</p>
     </div>
   </div>
 
+  <button class="menu-toggle" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+
   <nav>
     <a href="#beneficios">Beneficios</a>
+    <a href="#como-funciona">Servicios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#faq">FAQ</a>
     <a href="#reserva" class="btn-header">Reservar</a>
   </nav>
 </header>
 
-<!-- HERO -->
+
+<!-- ═══════════════════════════
+     HERO
+════════════════════════════ -->
 <section class="hero">
   <div class="hero-content">
-    <span class="eyebrow">Bienestar · Relajación · Equilibrio</span>
-    <h2>El bienestar se siente</h2>
-    <p>
-      Una experiencia sensorial diseñada para desconectarte del mundo
-      y reconectar contigo mismo.
-    </p>
-
+    <span class="hero-eyebrow">Bienestar · Relajación · Equilibrio</span>
+    <h2>El bienestar<br>se <em>siente</em></h2>
+    <p>Una experiencia sensorial diseñada para desconectarte del mundo y reconectar contigo mismo.</p>
     <div class="hero-buttons">
       <a href="#reserva">Agenda tu experiencia</a>
       <a href="#beneficios" class="secondary">Conoce más</a>
     </div>
   </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <strong>1200+</strong>
+      <span>Clientes felices</span>
+    </div>
+    <div class="stat">
+      <strong>15</strong>
+      <span>Rituales exclusivos</span>
+    </div>
+    <div class="stat">
+      <strong>8</strong>
+      <span>Años de experiencia</span>
+    </div>
+    <div class="stat">
+      <strong>98%</strong>
+      <span>Satisfacción</span>
+    </div>
+  </div>
 </section>
 
-<!-- CARDS DESTACADAS -->
+
+<!-- ═══════════════════════════
+     FEATURE CARDS
+════════════════════════════ -->
 <section class="feature-cards">
-  <div class="card">
-    <div class="card-icon">☀</div>
+  <div class="card reveal">
+    <div class="card-icon">🌿</div>
     <h3>Rituales hechos a medida</h3>
     <p>Cada servicio se diseña según tus necesidades físicas y emocionales.</p>
   </div>
-
-  <div class="card">
-    <div class="card-icon">ღ</div>
+  <div class="card reveal reveal-delay-1">
+    <div class="card-icon">✦</div>
     <h3>Ambiente sensorial exclusivo</h3>
     <p>Espacios cálidos, aromas naturales y música suave para una desconexión total.</p>
   </div>
-
-  <div class="card">
-    <div class="card-icon">☀</div>
+  <div class="card reveal reveal-delay-2">
+    <div class="card-icon">◎</div>
     <h3>Profesionales certificados</h3>
     <p>Equipo con experiencia en terapias de relajación, recuperación y cuidado holístico.</p>
   </div>
-
-  <div class="card">
-    <div class="card-icon">ღ</div>
-    <h3>Ritual de restauración profunda</h3>
+  <div class="card reveal reveal-delay-3">
+    <div class="card-icon">❧</div>
+    <h3>Restauración profunda</h3>
     <p>Tratamientos pensados para restaurar cuerpo y mente tras la rutina diaria.</p>
   </div>
 </section>
 
-<!-- BENEFICIOS -->
-<section id="beneficios" class="section">
-  <div class="section-text">
-    <h3>Masajes terapéuticos personalizados</h3>
-    <p><strong>Feature:</strong> Técnicas profesionales adaptadas a cada tipo de cuerpo.</p>
-    <p><strong>Benefit:</strong> Libera el estrés, reduce tensiones y recupera el equilibrio físico y mental.</p>
+
+<!-- ═══════════════════════════
+     BENEFICIOS (Features vs Benefits)
+════════════════════════════ -->
+<section id="beneficios" class="beneficios-section">
+  <div class="benefits-intro reveal">
+    <span class="section-label">Por qué elegirnos</span>
+    <h2 class="section-title">Cada detalle, <em>pensado para ti</em></h2>
+    <p class="section-subtitle">
+      Combinamos técnicas ancestrales con tecnología de bienestar moderna para ofrecerte
+      resultados que se sienten desde la primera sesión.
+    </p>
   </div>
 
-  <img src="https://img.freepik.com/foto-gratis/mujer-joven-masaje-facial-relajante-salon-spa_176420-7546.jpg?semt=ais_incoming&w=740&q=80" alt="Masaje spa">
+  <div class="benefits-grid">
+    <!-- Beneficio 1 -->
+    <div class="benefit-row reveal">
+      <div class="benefit-img">
+        <img src="https://img.freepik.com/foto-gratis/mujer-joven-masaje-facial-relajante-salon-spa_176420-7546.jpg?semt=ais_incoming&w=740&q=80" alt="Masaje terapéutico">
+      </div>
+      <div class="benefit-text">
+        <span class="benefit-chip">01 — Masajes</span>
+        <h3>Masajes terapéuticos personalizados</h3>
+        <div class="benefit-feature">
+          <strong>Lo que ofrecemos</strong>
+          <p>Técnicas profesionales adaptadas a cada tipo de cuerpo: sueco, de tejido profundo, hot stones y más.</p>
+        </div>
+        <div class="benefit-benefit">
+          <strong>Lo que obtienes</strong>
+          <p>Libera el estrés acumulado, reduce tensiones musculares y recuperas el equilibrio físico y mental desde la primera sesión.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beneficio 2 -->
+    <div class="benefit-row reverse reveal">
+      <div class="benefit-img">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="Aromaterapia">
+      </div>
+      <div class="benefit-text">
+        <span class="benefit-chip">02 — Aromaterapia</span>
+        <h3>Aromaterapia y ambiente sensorial</h3>
+        <div class="benefit-feature">
+          <strong>Lo que ofrecemos</strong>
+          <p>Aceites esenciales 100% naturales y espacios diseñados con luz tenue, sonidos curativos y aromas terapéuticos.</p>
+        </div>
+        <div class="benefit-benefit">
+          <strong>Lo que obtienes</strong>
+          <p>Mejora tu estado de ánimo, reduce la ansiedad y activa la respuesta natural de relajación de tu sistema nervioso.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beneficio 3 -->
+    <div class="benefit-row reveal">
+      <div class="benefit-img">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/808/765/small/spa-accessory-composition-set-in-day-spa-hotel-beauty-wellness-centre-spa-product-are-placed-in-luxury-spa-resort-room-ready-for-massage-therapy-from-professional-service-photo.jpg" alt="Spa premium">
+      </div>
+      <div class="benefit-text">
+        <span class="benefit-chip">03 — Expertos</span>
+        <h3>Profesionales certificados</h3>
+        <div class="benefit-feature">
+          <strong>Lo que ofrecemos</strong>
+          <p>Especialistas con formación internacional en terapias de bienestar, certificados por organismos de salud reconocidos.</p>
+        </div>
+        <div class="benefit-benefit">
+          <strong>Lo que obtienes</strong>
+          <p>Tranquilidad total y una experiencia segura, premium y adaptada a tus condiciones de salud específicas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="section reverse">
-  <div class="section-text">
-    <h3>Aromaterapia y ambiente sensorial</h3>
-    <p><strong>Feature:</strong> Aceites esenciales naturales y espacios diseñados para la calma.</p>
-    <p><strong>Benefit:</strong> Mejora tu estado de ánimo y reduce la ansiedad desde el primer momento.</p>
+
+<!-- ═══════════════════════════
+     CTA INTERMEDIO 1
+════════════════════════════ -->
+<div class="cta-band reveal">
+  <div class="cta-band-text">
+    <span class="section-label">Oferta de bienvenida</span>
+    <h2>Tu primera sesión con <em>20% de descuento</em></h2>
+    <p>Regálate la experiencia que mereces. Solo para nuevos clientes que reserven esta semana.</p>
+  </div>
+  <div class="cta-band-action">
+    <a href="#reserva" class="btn-primary">Quiero mi descuento</a>
+    <a href="#como-funciona" class="btn-ghost">Ver todos los servicios</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════
+     EXPLICACIÓN DEL PRODUCTO
+════════════════════════════ -->
+<section id="como-funciona" class="product-section">
+  <div class="product-grid">
+    <div class="product-text reveal">
+      <span class="section-label">Así funciona</span>
+      <h2 class="section-title">Tu ritual en <em>4 pasos</em></h2>
+      <p class="section-subtitle">
+        Hemos diseñado cada etapa de tu visita para que desde el primer momento
+        sientas que el mundo exterior desaparece.
+      </p>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Consulta personalizada</h4>
+            <p>Conversamos contigo para entender tus necesidades físicas, emocionales y preferencias antes de tu sesión.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Bienvenida sensorial</h4>
+            <p>Té de hierbas, música terapéutica y aromas seleccionados para iniciar tu estado de relajación antes del tratamiento.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Tratamiento exclusivo</h4>
+            <p>Tu ritual personalizado realizado por un especialista certificado en el espacio diseñado para ti.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>Seguimiento y cuidado</h4>
+            <p>Recomendaciones de cuidado en casa y programa de visitas para mantener los beneficios a largo plazo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-visual reveal reveal-delay-2">
+      <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85" alt="Ritual AURA">
+      <div class="product-visual-badge">
+        <strong>4.9 ★</strong>
+        <span>Rating promedio</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     TESTIMONIOS
+════════════════════════════ -->
+<section id="testimonios">
+  <div class="testimonios-intro reveal">
+    <span class="section-label">Lo que dicen</span>
+    <h2 class="section-title">Voces que nos <em>inspiran</em></h2>
+    <p class="section-subtitle">Más de 1,200 personas han transformado su relación con el bienestar en AURA.</p>
   </div>
 
-  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="Aromaterapia spa">
-</section>
+  <div class="testimonios-grid">
+    <div class="testimonio-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">
+        "Llegué con contracturas en los hombros de meses y salí sintiéndome literalmente nueva.
+        El ambiente es increíble y la terapeuta fue muy profesional y atenta."
+      </p>
+      <div class="testimonio-author">
+        <div class="author-avatar">V</div>
+        <div class="author-info">
+          <strong>Valentina R.</strong>
+          <span>Masaje de tejido profundo</span>
+        </div>
+      </div>
+    </div>
 
-<section class="section">
-  <div class="section-text">
-    <h3>Profesionales certificados</h3>
-    <p><strong>Feature:</strong> Especialistas con formación y experiencia en terapias de bienestar.</p>
-    <p><strong>Benefit:</strong> Confianza total y una experiencia segura y premium.</p>
+    <div class="testimonio-card featured reveal reveal-delay-1">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">
+        "Es el primer spa donde realmente siento que diseñaron todo pensando en mí.
+        Desde la consulta inicial hasta los aromas. Lo recomiendo a ojos cerrados."
+      </p>
+      <div class="testimonio-author">
+        <div class="author-avatar">C</div>
+        <div class="author-info">
+          <strong>Camila M.</strong>
+          <span>Ritual completo AURA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio-card reveal reveal-delay-2">
+      <div class="stars">★★★★★</div>
+      <p class="testimonio-text">
+        "Fui con mi pareja para un ritual de parejas y fue una experiencia que repetiríamos
+        cada mes si pudiéramos. El detalle del té de bienvenida marcó la diferencia."
+      </p>
+      <div class="testimonio-author">
+        <div class="author-avatar">A</div>
+        <div class="author-info">
+          <strong>Andrés & Laura T.</strong>
+          <span>Ritual de parejas</span>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <img src="https://static.vecteezy.com/system/resources/thumbnails/027/808/765/small/spa-accessory-composition-set-in-day-spa-hotel-beauty-wellness-centre-spa-product-are-placed-in-luxury-spa-resort-room-ready-for-massage-therapy-from-professional-service-photo.jpg" alt="Profesional spa">
 </section>
 
-<!-- FORMULARIO -->
-<section id="reserva" class="form-section">
-  <div class="form-header">
-    <h3>Reserva tu momento AURA</h3>
-    <p>Déjanos tus datos y nos pondremos en contacto contigo</p>
+
+<!-- ═══════════════════════════
+     CTA INTERMEDIO 2
+════════════════════════════ -->
+<div class="cta-band reveal">
+  <div class="cta-band-text">
+    <span class="section-label cta-label">Agenda hoy</span>
+    <h2 class="cta-title">¿Listo para <em>transformar</em><br>tu semana?</h2>
+    <p>Los cupos de fin de semana se agotan rápido. Reserva ahora y garantiza tu espacio.</p>
   </div>
+  <div class="cta-band-action">
+    <a href="#reserva" class="btn-primary cta-btn">Reservar ahora</a>
+    <a href="tel:+57XXXXXXXXXX" class="btn-ghost">Llamar directamente</a>
+  </div>
+</div>
 
-  <form>
-    <input type="text" placeholder="Nombre completo" required>
-    <input type="email" placeholder="Correo electrónico" required>
-    <input type="tel" placeholder="Teléfono">
-    <textarea placeholder="Mensaje o tipo de servicio"></textarea>
-    <button type="submit">Enviar solicitud</button>
-  </form>
+
+<!-- ═══════════════════════════
+     FAQ
+════════════════════════════ -->
+<section id="faq">
+  <div class="faq-layout">
+    <div class="faq-sidebar reveal">
+      <span class="section-label">Preguntas frecuentes</span>
+      <h2 class="section-title">Resolvemos tus <em>dudas</em></h2>
+      <p>
+        Si tienes alguna pregunta que no encuentres aquí, estamos siempre
+        disponibles para ayudarte.
+      </p>
+      <div class="faq-contact">
+        <a href="mailto:hola@auraspa.co">✉ hola@auraspa.co</a>
+        <a href="tel:+57XXXXXXXXXX">☎ +57 (XXX) XXX-XXXX</a>
+      </div>
+    </div>
+
+    <div class="faq-list reveal reveal-delay-1">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Necesito reservar con anticipación?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Sí, recomendamos reservar con al menos 48 horas de anticipación para garantizar disponibilidad, especialmente los fines de semana. Para grupos o rituales especiales, sugerimos una semana de antelación.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Cuánto dura una sesión típica?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Las sesiones van desde 60 minutos para tratamientos individuales hasta 3 horas para rituales completos. Al reservar te indicamos la duración exacta según el servicio seleccionado.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Qué debo llevar o usar durante el tratamiento?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Nosotros te proporcionamos bata, pantuflas y todo lo necesario. Solo tienes que llegar 15 minutos antes de tu cita para la consulta inicial y disfrutar de nuestra sala de bienvenida.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Tienen opciones para personas con condiciones especiales de salud?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Sí. Nuestros especialistas están capacitados para adaptar los tratamientos a personas con hipertensión, embarazo, lesiones musculares y otras condiciones. Siempre consultamos antes de la sesión.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Cuál es la política de cancelación?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Puedes cancelar o reprogramar sin costo hasta 24 horas antes de tu cita. Cancelaciones con menos de 24 horas de anticipación tienen un cargo del 50% del valor del servicio.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Ofrecen gift cards o bonos de regalo?</span>
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>¡Claro! Tenemos gift cards físicas y digitales disponibles en cualquier valor. Son el regalo perfecto para cumpleaños, aniversarios o para simplemente sorprender a alguien especial.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
+
+<!-- ═══════════════════════════
+     PRE-FOOTER / RESERVA
+════════════════════════════ -->
+<section id="reserva">
+  <div class="reserva-grid">
+    <div class="reserva-text reveal">
+      <span class="section-label">Reserva tu momento</span>
+      <h2 class="section-title">Agenda tu<br><em>experiencia AURA</em></h2>
+      <p>
+        Déjanos tus datos y uno de nuestros asesores se comunicará contigo en
+        menos de 2 horas para confirmar tu cita y resolver cualquier duda.
+      </p>
+      <div class="reserva-perks">
+        <div class="perk">
+          <div class="perk-icon">✓</div>
+          <span>Confirmación en menos de 2 horas</span>
+        </div>
+        <div class="perk">
+          <div class="perk-icon">✓</div>
+          <span>Sin pagos por adelantado para tu primera visita</span>
+        </div>
+        <div class="perk">
+          <div class="perk-icon">✓</div>
+          <span>Cancelación gratuita hasta 24h antes</span>
+        </div>
+        <div class="perk">
+          <div class="perk-icon">★</div>
+          <span>20% de descuento en tu primera sesión</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="reserva-form reveal reveal-delay-1" onsubmit="return false;">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label>Apellido</label>
+          <input type="text" placeholder="Tu apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="tu@correo.com" required>
+      </div>
+      <div class="form-group">
+        <label>Teléfono / WhatsApp</label>
+        <input type="tel" placeholder="+57 300 000 0000">
+      </div>
+      <div class="form-group">
+        <label>Servicio de interés</label>
+        <select>
+          <option value="" disabled selected>Selecciona un servicio</option>
+          <option>Masaje terapéutico</option>
+          <option>Ritual completo AURA</option>
+          <option>Aromaterapia</option>
+          <option>Ritual de parejas</option>
+          <option>Exfoliación corporal</option>
+          <option>Consulta personalizada</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mensaje o solicitud especial</label>
+        <textarea placeholder="¿Alguna condición de salud, preferencia o fecha que tengamos en cuenta?"></textarea>
+      </div>
+      <button type="submit" class="form-submit">Enviar solicitud →</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════
+     FOOTER
+════════════════════════════ -->
 <footer>
-  <p>© 2026 AURA El Spa · Todos los derechos reservados</p>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-mark">
+        <h3>AURA</h3>
+      </div>
+      <p>Un espacio diseñado para que recuperes tu equilibrio, descanses profundamente y te reconectes contigo mismo.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+        <a href="#" class="social-link" aria-label="TikTok">TK</a>
+        <a href="#" class="social-link" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Masajes terapéuticos</a></li>
+        <li><a href="#">Aromaterapia</a></li>
+        <li><a href="#">Ritual AURA completo</a></li>
+        <li><a href="#">Ritual de parejas</a></li>
+        <li><a href="#">Exfoliación corporal</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Información</h4>
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Nuestro equipo</a></li>
+        <li><a href="#">Blog de bienestar</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="mailto:hola@auraspa.co">hola@auraspa.co</a></li>
+        <li><a href="tel:+57XXXXXXXXXX">+57 (XXX) XXX-XXXX</a></li>
+        <li><a href="#">Bogotá, Colombia</a></li>
+        <li><a href="#">Lun – Sáb: 9am – 8pm</a></li>
+        <li><a href="#">Dom: 10am – 6pm</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 AURA El Spa · Todos los derechos reservados</p>
+    <p>Diseñado con ♡ para tu bienestar</p>
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

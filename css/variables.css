@@ -1,0 +1,68 @@
+/* ===========================
+   AURA SPA — Design Tokens
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap');
+
+:root {
+  /* Colors — from logo palette */
+  --ivory:      #F4F1EB;
+  --sage:       #6B7C52;
+  --sage-light: #8A9B6A;
+  --sage-dark:  #4A5A36;
+  --warm-tan:   #C4A882;
+  --warm-dark:  #9B7D5A;
+  --stone:      #B0A898;
+  --brown:      #7A5C42;
+  --white:      #FDFCF9;
+  --charcoal:   #2A2825;
+  --mist:       #E8E4DB;
+  
+  /* Legacy compatibility */
+  --bg1: #F7F3EA;
+  --bg2: #E7DCC6;
+  --txt: #4A4A35;
+  --muted: #7D6848;
+  --accent: #667336;
+  --surface: #FFF8EF;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans:  'Jost', sans-serif;
+
+  /* Spacing */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   2rem;
+  --space-lg:   4rem;
+  --space-xl:   7rem;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+
+  /* Transitions */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.35s var(--ease-smooth);
+
+  /* Shadows */
+  --shadow-soft: 0 8px 40px rgba(107,124,82,0.10);
+  --shadow-card: 0 4px 24px rgba(42,40,37,0.08);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--ivory);
+  color: var(--charcoal);
+  overflow-x: hidden;
+  font-weight: 300;
+}
+
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+a  { text-decoration: none; color: inherit; }
